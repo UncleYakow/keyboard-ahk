@@ -1,3 +1,5 @@
+; Version: 17.09.19
+
 short_distance := 4
 short_speed := 0
 
