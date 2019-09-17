@@ -2,12 +2,12 @@
 
 ; === Configure ===
 
-disable_keys = True
-select_all_shortcut_all_modes = False
-save_shortcut_all_modes = False
-undo_shortcut__all_modes = False
-copy_paste_shortcuts_all_modes = False
-command_keys_all_modes = False
+disable_keys := True
+select_all_shortcut_all_modes := False
+save_shortcut_all_modes := False
+undo_shortcut__all_modes := False
+copy_paste_shortcuts_all_modes := False
+command_keys_all_modes := False
 
 
 ; === Modes ===
