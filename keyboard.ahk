@@ -3,6 +3,8 @@
 ; === Configure ===
 
 disable_keys := 1
+shift_only_pressed := 0
+shift_timeout := 100
 
 ; === Modes ===
 ; 0 - Normal mode
@@ -10,22 +12,19 @@ disable_keys := 1
 
 mode := 0
 
-;CapsLock::
-;  if mode = 1
-;    mode := 0
-;  else
-;    mode := 1
-;return
+; === Switch mode ===
 
 CapsLock::
   mode := 1
 return
 
-Tab::
-  if mode = 1
-    mode := 0
-  else
-    Send {Blind}{Tab}
+Shift::
+  Send {Shift down}
+return
+
+Shift Up::
+  Send {Shift up}
+  mode := 0
 return
 
 ; === Switch languages ===
