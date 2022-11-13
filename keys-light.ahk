@@ -1,91 +1,29 @@
 RAlt::return
++RAlt::return
 
->!u:
-    ;Move N up
-return
+>!e::Send {Up}
+>!+e::Send +{Up}
+>!d::Send {Down}
+>!+d::Send +{Down}
+>!s::Send {Left}
+>!+s::Send +{Left}
+>!f::Send {Right}
+>!+f::Send +{Right}
 
->!j::
-    ;Move N down
-return
+>!a::Send ^{Left}
+>!+a::Send ^+{Left}
+>!g::Send ^{Right}
+>!+g::Send ^+{Right}
 
->!Backspace::
-    Send {Delete}
-return
+>!w::Send {Home}
+>!+w::Send +{Home}
+>!r::Send {End}
+>!+r::Send +{End}
 
->!k::
-    Send {Left}
-return
->!^k::
-    Send ^{Left}
-return
->!+k::
-    Send +{Left}
-return
->!^+k::
-    Send ^+{Left}
-return
+>!q:: Send {PgUp}
+>!t:: Send {PgDn}
 
->!l::
-    Send {Down}
-return
->!^l::
-    Send ^{Down}
-return
->!+l::
-    Send +{Down}
-return
->!^+l::
-    Send ^+{Down}
-return
-
->!SC027::
-    Send {Right}
-return
->!^SC027::
-    Send ^{Right}
-return
->!+SC027::
-    Send +{Right}
-return
->!^+SC027::
-    Send ^+{Right}
-return
-
->!o::
-    Send {Up}
-return
->!^o::
-    Send ^{Up}
-return
->!+o::
-    Send +{Up}
-return
->!^+o::
-    Send ^+{Up}
-return
-
->!i::
-    Send {Home}
-return
->!^i::
-    Send ^{Home}
-return
->!+i::
-    Send +{Home}
-return
->!^+i::
-    Send ^+{Home}
-return
-
->!p::
-    Send {End}
-return
->!^p::
-    Send ^{End}
-return
->!+p::
-    Send +{End}
-return
->!^+p::
-    Send ^+{End}
-return
+>!z::Send ^{BS}
+>!x::Send {BS}
+>!c::Send {Delete}
+>!v::Send ^{Delete}
